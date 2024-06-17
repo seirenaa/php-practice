@@ -22,7 +22,7 @@ if ($device === "windows"|| "mac") {
  }else {
         echo "どちらでもありません";
     }
-
+    
 // Q5 条件分岐-2 三項演算子
 $age = 20;
 
