@@ -1,19 +1,16 @@
 <?php
 // Q1 tic-tac問題
 for ($i = 1; $i <= 100; $i++) {
-  if ($i % 4 == 0) {
-      echo 'tic';
+    if ($i % 4 == 0) {
+        echo "tic\n";
+      }elseif ($i % 5 == 0) {
+        echo "tac\n";
+      }elseif ($i % 4 == 0 && $i % 5 == 0) {
+        echo "tic-tac\n";
+      }else {
+        echo $i ."\n";
+    }
   }
-  if ($i % 5 == 0) {
-      echo 'tac';
-  }
-  if ($i % 4 == 0 && $i % 5 == 0) {
-      echo 'tic-tac';
-  }
-  else {
-      echo $i .'<br>';
-  }
-}
 
 
 // Q2 多次元連想配列

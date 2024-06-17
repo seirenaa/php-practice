@@ -17,15 +17,11 @@ echo "現在時刻は、" . date("Y年m月d日 H時i分s秒") . "です。";
 // Q4 条件分岐-1 if文
 $device ='mac';
 
-if ($device === "windows") {
-    echo "使用OSは、windowsです。";
-} else {
-    if ($device === "mac") {
-        echo "使用OSは、macです。";
-    } else {
-        echo "どちらでもありません。";
+if ($device === "windows"|| "mac") {
+    echo "使用OSは、".$device."です。";
+ }else {
+        echo "どちらでもありません";
     }
-}
 
 // Q5 条件分岐-2 三項演算子
 $age = 20;
@@ -57,8 +53,9 @@ foreach ($kanto_capitals as $capital) {
 
 foreach ($kanto_capitals as $key => $capital) {
     if($capital === 'さいたま'){
-        echo $key.'の県庁所在地は、'.$capital.'市です。';
+        break;
     }
+    echo $key.'の県庁所在地は、'.$capital.'市です。';
 }
 
 // Q9 連想配列-3
@@ -88,11 +85,13 @@ foreach ($kanto_capitals as $key => $capital) {
 // Q10 関数-1
 
 function hello($name) {
-    echo $name . "さん、こんにちは。";
+    return $name . "さん、こんにちは。";
 }
 
-hello("金谷");
-hello("安藤");
+$kanaya = hello("金谷");
+$andou = hello("安藤");
+echo $kanaya;
+echo $andou;
 
 // Q11 関数-2
 function calcTaxInPrice($price) {
