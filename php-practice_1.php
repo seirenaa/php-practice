@@ -19,10 +19,10 @@ $device ='mac';
 
 if ($device === "windows"|| "mac") {
     echo "使用OSは、".$device."です。";
- }else {
-        echo "どちらでもありません";
-    }
-    
+}else {
+    echo "どちらでもありません";
+}
+
 // Q5 条件分岐-2 三項演算子
 $age = 20;
 
@@ -53,9 +53,10 @@ foreach ($kanto_capitals as $capital) {
 
 foreach ($kanto_capitals as $key => $capital) {
     if($capital === 'さいたま'){
+        echo $key.'の県庁所在地は、'.$capital.'市です。';
         break;
     }
-    echo $key.'の県庁所在地は、'.$capital.'市です。';
+    
 }
 
 // Q9 連想配列-3
