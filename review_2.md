@@ -59,7 +59,8 @@ $prev = new DateTime('2000-1-1');
 echo $prev->diff($now)->format('%a')
 ```
 1. 一行目でDateTimeというクラスが実体化されていることがわかる。
-1. なので、DateTimeで検索する。その中のメソッドにdiffがある。
+1. なので、DateTimeで検索する。
+1. メソッドチェーンは前のメッソドの返り値によって呼び出されるので、diffメッソドを調べる必要がある。
 1. DateTimeクラス内のメソッドdiffの返り値を見るとThe DateInterval object represents the difference between the two dates.とある。
-1. 次にformatのページの返り値をみるとReturns the formatted date string on success.とある。
+1. 次にDateTimeのなかのformatメッソドの返り値をみるとReturns the formatted date string on success.とある。
 1. であるから最終的な返り値はstring型で$nowと$prevの差を返してくる。
