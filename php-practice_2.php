@@ -1,5 +1,6 @@
 <?php
 // Q1 tic-tac問題
+
 for ($i = 1; $i <= 100; $i++) {
     if ($i % 4 == 0) {
         echo "tic\n";
