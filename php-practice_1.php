@@ -115,7 +115,7 @@ function distinguishNum($num){
     echo $num . "は偶数です。";
         else {
         echo $num . "は奇数です。";
-     }
+    }
 }
 
 echo distinguishNum(11);
